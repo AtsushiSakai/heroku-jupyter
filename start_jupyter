@@ -2,6 +2,8 @@
 
 pgcontents init -l $DATABASE_URL --no-prompt
 
+mkdir -p /app/.local/share/jupyter
+
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
 	--config=jupyterconfig.py \
