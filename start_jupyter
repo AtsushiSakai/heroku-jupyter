@@ -2,9 +2,16 @@
 
 pgcontents init -l $DATABASE_URL --no-prompt
 
+<<<<<<< HEAD
 mkdir -p /app/.local/share/jupyter
+=======
+mkdir -p /app/.jupyter
+cp jupyterconfig.py /app/.jupyter/jupyter_notebook_config.py
+
+jupyter contrib nbextension install --user
+jupyter nbextensions_configurator enable --user
+>>>>>>> 9a586882daebbe6a5930931222eba0dc7c689739
 
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
-	--config=jupyterconfig.py \
 	notebooks
