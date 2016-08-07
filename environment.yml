@@ -13,8 +13,4 @@ dependencies:
   - nose
   - pip:
     - git+git://github.com/pl31/pgcontents.git
-<<<<<<< HEAD
-    - git+git://github.com/ipython-contrib/IPython-notebook-extensions.git
-=======
     - git+git://github.com/ipython-contrib/jupyter_contrib_nbextensions.git
->>>>>>> 9a586882daebbe6a5930931222eba0dc7c689739
